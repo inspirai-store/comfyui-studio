@@ -6,10 +6,11 @@
 
 ## 功能特性
 
-本插件提供 **8 个专业 Skill**，覆盖 AI 创作全流程：
+本插件提供 **9 个专业 Skill**，覆盖 AI 创作全流程：
 
 | Skill | 说明 |
 |-------|------|
+| **环境配置** (setup) | 首次配置引导 — 检测 ComfyUI、安装 Comfy Pilot、生成 MCP 配置 |
 | **图像生成** (image-gen) | 文生图/图生图，支持 FLUX、SDXL、SD 1.5 等主流模型 |
 | **视频生成** (video-gen) | 图生视频/文生视频，支持 Wan 2.1/2.2、AnimateDiff、FramePack |
 | **提示词工程** (prompt-engineer) | 智能提示词构建、翻译、优化、风格迁移 |
@@ -98,11 +99,10 @@ comfyui-studio/
 │   ├── model-manager/         # 模型管理
 │   └── video-assembly/        # 视频组装
 ├── agents/                    # 自主 Agent 定义
-│   ├── comfy-scanner/         # 环境扫描器
-│   └── comfy-debugger/        # 工作流调试器
+│   ├── comfy-scanner.md       # 环境扫描器
+│   └── comfy-debugger.md      # 工作流调试器
 ├── commands/                  # 斜杠命令定义
-├── hooks/                     # 生命周期钩子
-└── state/                     # 状态模板
+└── hooks/                     # 生命周期钩子
 ```
 
 ## 许可证

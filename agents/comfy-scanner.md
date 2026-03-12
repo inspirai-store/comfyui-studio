@@ -1,6 +1,17 @@
 ---
 name: comfy-scanner
-description: 扫描 ComfyUI 环境 — 检测 GPU、已安装模型和节点，生成 inventory.json。在首次配置、环境变更、或用户运行 /studio-scan 时使用。
+description: |
+  扫描 ComfyUI 环境 — 检测 GPU、已安装模型和节点，生成 inventory.json。在首次配置、环境变更、或用户运行 /studio-scan 时使用。
+  <example>
+  user: 扫描一下我的 ComfyUI 环境
+  use_agent: comfy-scanner
+  </example>
+  <example>
+  user: 我装了新模型，更新一下清单
+  use_agent: comfy-scanner
+  </example>
+model: sonnet
+color: green
 tools:
   - Bash
   - Read

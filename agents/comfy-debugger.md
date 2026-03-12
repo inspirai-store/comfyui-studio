@@ -1,6 +1,17 @@
 ---
 name: comfy-debugger
-description: 自主诊断 ComfyUI 工作流错误 — 分析日志、交叉校验 inventory、输出修复方案。在工作流执行失败、用户运行 /studio-debug、或 hook 触发时使用。
+description: |
+  自主诊断 ComfyUI 工作流错误 — 分析日志、交叉校验 inventory、输出修复方案。在工作流执行失败、用户运行 /studio-debug、或 hook 触发时使用。
+  <example>
+  user: 工作流跑失败了，帮我看看什么问题
+  use_agent: comfy-debugger
+  </example>
+  <example>
+  user: ComfyUI 报错 CUDA out of memory
+  use_agent: comfy-debugger
+  </example>
+model: sonnet
+color: red
 tools:
   - Bash
   - Read
