@@ -37,9 +37,9 @@ description: 首次配置 ComfyUI Studio — 检测 ComfyUI 路径、安装 Comf
 **如果未安装：** 向用户提供以下三种安装方式，让用户选择：
 
 ```
-方法 1（推荐）: comfy node install comfy-pilot
-方法 2（手动）: cd {COMFYUI_PATH}/custom_nodes && git clone https://github.com/constantineb6/comfy-pilot.git comfy-pilot
-方法 3（Manager）: 在 ComfyUI Manager 中搜索 "comfy-pilot" 安装
+方法 1（推荐）: cd {COMFYUI_PATH}/custom_nodes && git clone https://github.com/ConstantineB6/comfy-pilot.git
+方法 2（Manager）: 在 ComfyUI Manager 中搜索 "comfy-pilot" 安装
+方法 3（comfy-cli）: pip install comfy-cli && comfy node install comfy-pilot（需先安装 comfy-cli）
 ```
 
 安装完成后提醒用户：**需要重启 ComfyUI 才能生效。**
